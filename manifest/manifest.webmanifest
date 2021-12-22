@@ -3,7 +3,7 @@
     "background_color": "#e3882f",
     "display": "standalone",
     "scope": "./",
-    "start_url": "/sagar",
+    "start_url": "https://codingsagar.github.io/sagar/",
     "name": "Coding Sagar",
     "short_name": "CS",
     "description": "Coding Sagar Website / WebApp",
