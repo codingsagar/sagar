@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+}
+
+#main {
+  background-color: #2c2c32;
+}
+
+#logo {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 70px;
+  cursor: pointer;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  background-color: #2c2c32;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu li {
+  margin: 8px 5px;
+  font-weight: bold;
+  padding: 3px;
+  font-size: 15px;
+}
+
+.menu li a {
+  color: rgb(22, 240, 22);
+  transition: all 0.5s;
+}
+
+.menu li a:hover {
+  color: white;
+}
+
+#search {
+  padding: 3px 5px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  top: 18px;
+  outline-color: rgb(0, 174, 255);
+  right: 5%;
+}
+
+.start {
+  text-align: center;
+  height: 95vh;
+  color: white;
+  background: linear-gradient(
+    to right,
+    rgb(236, 4, 197) 20%,
+    rgb(230, 131, 230)
+  );
+  /* background-color: #E625C6; */
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.start h1 {
+  text-align: center;
+}
+
+.start p {
+  padding: 5px 25px;
+}
+
+.start input {
+  border-radius: 50px;
+  padding: 10px 12px;
+  border: none;
+  margin: 8px 8px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  font-weight: 500;
+  transition: all 0.9s;
+}
+
+.start input:hover {
+  color: rgb(22, 240, 22);
+  background-color: black;
+}
+
+.start img {
+  border-radius: 130px;
+  width: 120px;
+  height: 120px;
+  border: 3px solid white;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
+  margin-bottom: 10px;
+}
+
+.help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.help iframe {
+  width: 350px;
+  height: 200px;
+}
+
+.help h2 {
+  font-size: 2rem;
+  margin: auto 0;
+  text-align: center;
+}
+
+.help p {
+  width: 70%;
+  margin-top: 30px;
+  text-align: left;
+  word-spacing: 3px;
+  line-height: 1.5;
+  color: rgb(56, 48, 48);
+}
+
+.help iframe {
+  border-radius: 10px;
+}
+
+footer {
+  word-spacing: 2px;
+  color: white;
+  margin-top: 50px;
+  height: 100px;
+  background-color: rgba(250, 4, 135, 0.835);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+footer p {
+  padding: 5px 0px;
+}
+
+.myandroidapp {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.myandroidapp img {
+  width: 300px;
+  height: 215px;
+  border-radius: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.911);
+  margin: 40px 0;
+}
+
+.myandroidapp p {
+  color: black;
+}
+
+.myandroidapp h2 {
+  text-align: center;
+}
+
+.myandroidapp button a {
+  text-decoration: none;
+  animation: text-color 3s infinite linear;
+  color: #ffffff;
+}
+
+.myandroidapp button {
+  margin: 20px 0;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #d63737;
+  line-height: 50%;
+}
+
+.websites {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.websites a {
+  margin: 10px;
+}
+
+.items {
+  color: white;
+  width: 70vw;
+  background-color: rgb(22, 125, 243);
+  padding: 10px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 1.1rem;
+  border-radius: 2px;
+}
+
+.item1 {
+  background-color: #00ce22;
+  color: white;
+}
+.item2 {
+  background-color: rgb(22, 125, 243);
+}
+
+.item3 {
+  background-color: #bd0e3e;
+}
+
+.item4 {
+  background-color: #ec790e;
+}
+
+.item5 {
+  background-color: #61509b;
+}
+
+.item6 {
+  background-color: #36a286;
+}
+
+.item7 {
+  background-color: #f00314;
+}
+
+.item8 {
+  background-color: #ed810e;
+}
+.item9 {
+  background-color: #00ce22;
+}
+.item10 {
+  background-color: #61509b;
+}
+.item11 {
+  background-color: #bd0e3e;
+}
+.item12 {
+  background-color: #ec790e;
+}
+.item13 {
+  background-color: #5d4037;
+}
+.item14 {
+  background-color: #f00314;
+}
+.item15 {
+  background-color: #61509b;
+}
+
+@keyframes text-color {
+  0% {
+    color: yellow;
+  }
+
+  30% {
+    color: rgb(0, 255, 0);
+  }
+
+  60% {
+    color: cyan;
+  }
+
+  80% {
+    color: white;
+  }
+}
+
+.myandroidapp button:hover {
+  background-color: #da4a4a;
+}
+
+.fa {
+  color: rgb(12, 224, 12);
+  padding: 2px;
+}
+
+/* Code For Responsive */
+
+@media (max-height: 400px) {
+  .start {
+    height: 120vh;
+  }
+
+  .myandroidapp {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .myandroidapp {
+    width: 100%;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    background-color: #2c2c32;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    animation: navbar 200ms ease-in 1;
+  }
+
+  @keyframes navbar {
+    0% {
+      height: 0;
+    }
+
+    100% {
+      height: 250px;
+    }
+  }
+
+  .burger {
+    position: absolute;
+    cursor: pointer;
+    top: 14px;
+    right: 5%;
+  }
+
+  .line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+  }
+
+  .hide {
+    display: flex;
+  }
+
+  #search {
+    display: none;
+  }
+
+  #logo {
+    padding-left: 20px;
+  }
+
+  .help h2 {
+    margin: 20px 0;
+  }
+
+  .help p {
+    width: 90%;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  .help iframe {
+    width: 300px;
+    height: 180px;
+  }
+
+  .start p {
+    padding: 5px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .myandroidapp img {
+    width: 70vw;
+    height: 32vh;
+  }
+}
