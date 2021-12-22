@@ -1,6 +1,6 @@
 {
     "theme_color": "#2c2c32",
-    "background_color": "#e3882f",
+    "background_color": "#ffffff",
     "display": "standalone",
     "scope": "./",
     "start_url": "https://codingsagar.github.io/sagar/",
