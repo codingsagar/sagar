@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Sagar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        nav {
+            position: sticky;
+            top: 0px;
+
+        }
+
+        #main {
+            background-color: #2C2C32;
+        }
+
+        #logo {
+            height: 60px;
+            line-height: 60px;
+            padding-left: 40px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            background-color: #2C2C32;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .menu li {
+            margin: 10px 5px;
+            font-weight: bold;
+            padding: 3px;
+            font-size: 18px;
+        }
+
+        .menu li a {
+            color: rgb(22, 240, 22);
+            transition: all 0.5s;
+        }
+
+
+
+        .menu li a:hover {
+            color: white;
+        }
+
+        #search {
+            padding: 3px 5px;
+            font-size: 15px;
+            border-radius: 3px;
+            border: none;
+            position: absolute;
+            cursor: pointer;
+            top: 18px;
+            outline-color: rgb(0, 174, 255);
+            right: 5%;
+
+        }
+
+        .start {
+            text-align: center;
+            height: 95vh;
+            color: white;
+            background: linear-gradient(to right, rgb(236, 4, 197) 20%, rgb(230, 131, 230));
+            /* background-color: #E625C6; */
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .start h1 {
+            text-align: center;
+        }
+
+        .start p {
+            padding: 5px 25px;
+        }
+
+        .start input {
+            border-radius: 50px;
+            padding: 10px 12px;
+            border: none;
+            margin:8px 8px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            outline: none;
+            font-weight: 500;
+            transition: all 0.7s;
+        }
+
+        .start input:hover {
+            color: white;
+            background-color: black;
+        }
+
+        .start img {
+            border-radius: 130px;
+            width: 120px;
+            height: 120px;
+            border: 3px solid white;
+            -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
+            margin-bottom: 10px;
+        }
+
+        .help {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+
+
+
+        }
+
+        .help iframe {
+            width: 350px;
+            height: 200px;
+        }
+
+        .help h2 {
+            font-size: 2rem;
+            margin: auto 0;
+            text-align: center;
+
+        }
+
+        .help p {
+            width: 70%;
+            margin-top: 30px;
+            text-align: justify;
+            word-spacing: 3px;
+            color: rgb(56, 48, 48);
+
+        }
+
+
+        .help iframe {
+            border-radius: 10px;
+        }
+
+        footer {
+            word-spacing: 2px;
+            color: white;
+            margin-top: 50px;
+            height: 100px;
+            background-color: rgba(250, 4, 135, 0.835);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+        }
+
+        footer p {
+            padding: 5px 0px;
+        }
+
+        .myandroidapp {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 40px auto;
+
+        }
+
+        .myandroidapp img {
+            width: 300px;
+            height: 215px;
+            border-radius: 20px;
+            border: 2px solid rgba(0, 0, 0, 0.911);
+            margin: 40px 0;
+        }
+
+        .myandroidapp p {
+            color: black;
+        }
+
+        .myandroidapp h2 {
+            text-align: center;
+        }
+
+        .myandroidapp button a {
+            text-decoration: none;
+            animation: text-color 3s infinite linear;
+            color: #ffffff;
+        }
+
+        .myandroidapp button {
+            margin: 20px 0;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 15px;
+            background-color: #d63737;
+            line-height: 50%;
+        }
+
+        .websites {
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .websites a {
+            margin: 10px;
+        }
+
+        .items {
+            color: white;
+            width: 70vw;
+            background-color: rgb(22, 125, 243);
+            padding: 10px;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 1.1rem;
+            border-radius: 2px;
+
+
+        }
+
+        .item1 {
+            background-color: #00ce22;
+            color: white;
+        }
+        .item2 {
+            background-color: rgb(22, 125, 243);
+        }
+
+        .item3 {
+            background-color: #BD0E3E;
+        }
+
+        .item4 {
+            background-color: #EC790E;
+        }
+
+        .item5 {
+            background-color: #61509B;
+        }
+
+        .item6 {
+            background-color: #36A286;
+        }
+
+        .item7 {
+            background-color: #F00314;
+        }
+
+        .item8 {
+            background-color: #ED810E;
+        }
+        .item9 {
+            background-color: #00ce22;
+        }
+        .item10 {
+            background-color: #61509B;
+        }
+        .item11 {
+            background-color: #BD0E3E;
+        }
+        .item12 {
+            background-color: #EC790E;
+        }
+        .item13 {
+            background-color: #5D4037;
+        }
+        .item14 {
+            background-color: #F00314;
+        }
+        .item15 {
+            background-color: #61509B;
+        }
+        
+
+
+
+        @keyframes text-color {
+            0% {
+                color: yellow;
+            }
+
+            30% {
+                color: rgb(0, 255, 0);
+            }
+
+            60% {
+                color: cyan;
+            }
+
+            80% {
+                color: white;
+
+            }
+
+        }
+
+        .myandroidapp button:hover {
+            background-color: #da4a4a;
+        }
+
+        .fa {
+            color: rgb(12, 224, 12);
+            padding: 2px;
+        }
+
+        /* Code For Responsive */
+
+        @media (max-height:400px) {
+            .start {
+                height: 120vh;
+            }
+
+            .myandroidapp {
+                width: 100%;
+            }
+
+
+        }
+
+        @media (max-width:800px) {
+
+            .myandroidapp {
+                width: 100%;
+            }
+
+            .menu {
+                display: none;
+                flex-direction: column;
+                list-style: none;
+                background-color: #2C2C32;
+                align-items: center;
+                height: 100%;
+                justify-content: center;
+                animation: navbar 180ms ease-in-out 1;
+            }
+
+            @keyframes navbar {
+                0% {
+                    height: 0;
+                }
+
+                100% {
+                    height: 250px;
+                }
+            }
+
+            .burger {
+                position: absolute;
+                cursor: pointer;
+                top: 18px;
+                right: 5%;
+            }
+
+            .line {
+                width: 33px;
+                background-color: white;
+                height: 4px;
+                margin: 3px 3px;
+            }
+
+            .hide {
+                display: flex;
+
+
+
+            }
+
+            #search {
+                display: none;
+            }
+
+            #logo {
+                padding-left: 20px;
+            }
+
+
+            .help h2 {
+                margin: 20px 0;
+            }
+
+            .help p {
+                width: 90%;
+            }
+
+            footer {
+                padding: 10px;
+            }
+
+            .help iframe {
+                width: 300px;
+                height: 180px;
+            }
+
+            .start p {
+                padding: 5px 20px;
+            }
+
+
+        }
+
+        @media (max-width:400px) {
+            .myandroidapp img {
+                width: 70vw;
+                height: 32vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="main">
+            <h2 id="logo">Coding Sagar</h2>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#websites">Websites</a></li>
+                <li><a href="#">Videos</a>
+                </li>
+                <li><a href="https://suriishere.blogspot.com/">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+
+            </ul>
+            <input type="search" name="" id="search" placeholder="Search Here">
+        </div>
+    </nav>
+    <div class="start">
+        <img src="codermine.png" alt="Coding Sagar">
+        <h1>Welcome To Coding Sagar</h1>
+        <p>Who am I ? I am a front-end developer.I have learnt HTML,CSS,PHP and will learn React Js & Node Js soon. </p>
+        <div class="buttons">
+            <a href="https://www.instagram.com/codingsagar/" target="_blank">
+
+                <input type="button" value="Follow me">
+            </a>
+            <a href="https://www.instagram.com/codingsagar/" target="_blank">
+
+                <input type="button" value="Contact Me">
+            </a>
+        </div>
+    </div>
+
+    
+    <div class="help">
+        <h2>Learn HTML Basics</h2>
+        <br>
+        <iframe src="https://www.youtube.com/embed/BVkMXEE48Js" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web
+            browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as
+            JavaScript.Learn HTML Basics From <strong>me</strong>. In this above video i have introduced you to HTML
+            Basic tags and its simple
+            structure. So, don't miss this video and after completeing this HTML Basic Video now go for more HTML Videos
+            which are available to you free on Youtube. Only Search HTML Tutorials . That's it you will get free and
+            awesome HTML tutorials.If you want to make your own websites with coding so you have to learn HTML,CSS &
+            JavaScript to make it look good.After completeing HTML go for CSS and then JavaScript.
+            Keep Coding Guys.</p>
+
+    </div>
+    <hr>
+    <div class="websites">
+        <br>
+        <h2 id="websites">MY OTHER WEBSITES</h2>
+        <br>
+        <a href="https://codingsagar.github.io/make-music/">
+            <div class="item1 items">Make Music</div>
+        </a>
+        <a href="http://codingsagar.github.io/facebook-clone">
+            <div class="item2 items">Facebook-Clone</div>
+        </a>
+        <a href="http://wishhappybirthday.great-site.net/">
+            <div class="item3 items">Wish Happy Birthday</div>
+        </a>
+        <a href="https://codingsagar.github.io/website/">
+            <div class="item4 items">Coding Information</div>
+        </a>
+        <a href="https://codingsagar.github.io/musicplayer/">
+            <div class="item5 items">Music Player</div>
+        </a>
+        <a href="https://codingsagar.github.io/sharinggyaan/">
+            <div class="item6 items">Sharing-Gyaan</div>
+        </a>
+        <a href="https://codingsagar.github.io/youtube/">
+            <div class="item7 items">Watch Youtube Here</div>
+        </a>
+        <a href="https://codingsagar.github.io/clock/">
+            <div class="item8 items">Clock</div>
+        </a>
+        <a href="https://codingsagar.github.io/alarm/">
+            <div class="item9 items">Simple Alarm</div>
+        </a>
+        <a href="https://codingsagar.github.io/stop-watch/">
+            <div class="item10 items">Stop-Watch</div>
+        </a>
+        <a href="https://codingsagar.github.io/memeapp/">
+            <div class="item11 items">Enjoy Memes</div>
+        </a>
+        <a href="https://codingsagar.github.io/temp/">
+            <div class="item12 items">Thermometer Animation</div>
+        </a>
+        <a href="https://codingsagar.github.io/calculator/">
+            <div class="item13 items">Simple Calculator</div>
+        </a>
+        <a href="https://codingsagar.github.io/coderwebsite/">
+            <div class="item14 items">Coder Website 🤟</div>
+        </a>
+        <a href="https://cs-text-utils.netlify.app/">
+            <div class="item15 items">TextUtils - ReactApp</div>
+        </a>
+    </div>
+    <br>
+    <hr>
+    <div class="myandroidapp">
+        <h2>MY ANDROID APP</h2>
+        <img src="app.jpg" alt="Android App Development">
+        <p>App Name - BirthdayGreeting</p>
+        <div>
+            <i class="fa fa-android" style="font-size:22px"></i>
+            <button><a href="./BirthdayGreeting-Sagar.apk" download>Download
+                    App</a></button>
+            <i class="fa fa-android" style="font-size:22px"></i>
+        </div>
+
+    </div>
+    <footer>
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            <p>This website is Developed By <strong>Sagar</strong></p>
+        </marquee>
+        <p>&copy; Copyrights Reserved 2020-2025</p>
+
+    </footer>
+
+    <script>
+        var hidemenu = document.querySelector(".menu");
+        var burger = document.querySelector(".burger")
+        burger.addEventListener('click', () => {
+            hidemenu.classList.toggle("hide")
+
+        })
+    </script>
+
+</body>
+
+</html>
